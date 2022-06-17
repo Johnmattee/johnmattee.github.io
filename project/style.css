@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+   --orange: hsl(31, 77%, 52%);
+   --darkcyan: hsl(184, 100%, 22%);
+   --verydarkcyan: hsl(179, 100%, 13%);
+   --paragraphcolor: hsla(0, 0%, 100%, 0.75);
+   --lightgray: hsl(0, 0%, 95%);
+   font-size: 15px;
+}
+
+body{
+    background: var(--lightgray);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    position: relative;
+}
+
+a{
+    position: absolute;
+    top: 0;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    background-color:hsl(179, 100%, 13%);
+    color:white;
+    border-radius: 0.5em;
+    text-align:center;
+    padding: 1em 2em;
+}
+
+
+.container{
+    display: flex;
+    align-items: stretch;
+    margin-top: 15vh;
+}
+
+.card1{
+    background-color: var(--orange);
+    padding: 3em;
+    border-radius: 0.5em 0 0 0.5em;
+    width: 18em;
+}
+
+.card2{
+    background-color: var(--darkcyan);
+    padding: 3em;
+    width: 18em;
+}
+
+.card3{
+    background-color: var(--verydarkcyan);
+    padding: 3em;
+    border-radius: 0 0.5em 0.5em 0;
+    width: 18.1em;
+}
+
+h2{
+    text-transform: uppercase;
+    color: var(--lightgray);
+    margin-bottom: 1em;
+    font-family: 'Big Shoulders Display', cursive;
+}
+
+p{
+    color: var(--paragraphcolor);
+    line-height: 1.6em;
+    margin-bottom: 5em;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+button{
+    outline: none;
+    border: none;
+    background-color: var(--lightgray);
+    text-align: center;
+    padding: 0.9em 2em ;
+    border-radius: 1.6em;
+    text-transform: capitalize;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.btn1{
+    color: var(--orange);
+}
+
+.btn1:hover, .btn:active{
+    color: var(--lightgray);
+    border: 2px solid var(--lightgray);
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.btn2{
+    color: var(--darkcyan);
+}
+
+.btn2:hover, .btn:active{
+    color: var(--lightgray);
+    border: 2px solid var(--lightgray);
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.btn3{
+    color: var(--verydarkcyan);
+}
+
+.btn3:hover, .btn3:active{
+    color: var(--lightgray);
+    border: 2px solid var(--lightgray);
+    background-color: transparent;
+    cursor: pointer;
+}
+
+img{
+    width: 3.5em;
+    margin-bottom: 1.5em;
+}
+
+
+@media (max-width: 375px){
+    .container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .card1{
+        border-radius: 0.5em 0.5em 0 0;
+    }
+    .card3{
+        border-radius: 0 0 0.5em 0.5em;
+    }
+    .card1, .card2, .card3{
+        width: 75%;
+        
+    }
+
+p{
+    margin-bottom: 1em;
+}
+}
